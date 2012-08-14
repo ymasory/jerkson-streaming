@@ -3,9 +3,11 @@
   <groupId>com.codahale</groupId>
   <artifactId>jerkson_2.9.1</artifactId>
   <versioning>
+    <release>0.5.2-CPHY</release>
     <versions>
       <version>0.5.1-SNAPSHOT</version>
+      <version>0.5.2-CPHY</version>
     </versions>
-    <lastUpdated>20120624194141</lastUpdated>
+    <lastUpdated>20120814052102</lastUpdated>
   </versioning>
 </metadata>
