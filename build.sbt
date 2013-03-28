@@ -11,9 +11,9 @@ licenses := Seq(
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/CloudPhysics/jerkson"),
-    "scm:git:https://github.com/CloudPhysics/jerkson.git",
-    Some("scm:git:git@github.com:CloudPhysics/jerkson.git")
+    url("https://github.com/cphylabs/jerkson"),
+    "scm:git:https://github.com/cphylabs/jerkson.git",
+    Some("scm:git:git@github.com:cphylabs/jerkson.git")
   )
 )
 
