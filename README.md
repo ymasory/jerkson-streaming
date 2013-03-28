@@ -1,10 +1,11 @@
 # Jerkson + Scala 2.10 + Streaming Iteration #
 
 [Jerkson](https://github.com/codahale/jerkson) has only been published for
-Scala versions as high as 2.9.1.
+Scala versions as high as 2.9.1 and does not support streaming iteration.
 
 ## Differences from upstream Jerkson ##
-- This repo uses sbt not Maven.
+- Streaming iteration is supported.
+- sbt instead of Maven.
 - Tests have been deleted, since sbt cannot run
   [simplespec](https://github.com/SimpleFinance/simplespec) tests.
 - Minor tweaks to get compilation in 2.10.
