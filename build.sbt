@@ -62,10 +62,14 @@ javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 /* dependencies */
 libraryDependencies ++= Seq(
   "org.codehaus.jackson" % "jackson-core-asl" % "1.9.12",
-  "org.codehaus.jackson" % "jackson-mapper-asl" % "1.9.12",
-  "org.scala-lang" % "scala-reflect" % "2.10.1"
+  "org.codehaus.jackson" % "jackson-mapper-asl" % "1.9.12"
   // "com.codahale" %% "simplespec" % "0.6.0" % "test"
 )
+
+libraryDependencies <+= scalaVersion {
+  "org.scala-lang" % "scala-reflect" % _
+}
+
 
 /* testing */
 parallelExecution in Test := false
