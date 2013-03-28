@@ -1,4 +1,4 @@
-# Jerkson for Scala 2.10 #
+# Jerkson + Scala 2.10 + Streaming Iteration #
 
 [Jerkson](https://github.com/codahale/jerkson) has only been published for
 Scala versions as high as 2.9.1.
