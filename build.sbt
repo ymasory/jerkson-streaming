@@ -20,22 +20,23 @@ scmInfo := Some(
 /* scala versions and options */
 scalaVersion := "2.10.1"
 
-crossScalaVersions ++= Seq(
-  "2.10.0"
-)
-
 // These options will be used for *all* versions.
 scalacOptions ++= Seq(
-  "-deprecation",
+  // "-deprecation",
   "-unchecked",
   "-encoding", "UTF-8",
-  "-optimise"   // this option will slow your build
+  "-optimise"
 )
 
 scalacOptions ++= Seq(
   "-Yclosure-elim",
   "-Yinline"
 )
+
+// javaOptions ++= Seq(
+//   "-Dscalac.patmat.analysisBudget=512"
+// )
+
 
 // These language flags will be used only for 2.10.x.
 // Uncomment those you need, or if you hate SIP-18, all of them.
