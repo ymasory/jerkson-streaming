@@ -4,7 +4,7 @@ package rules
 package scalasig
 
 import ClassFileParser.{ConstValueIndex, Annotation}
-import scala.reflect.generic.ByteCodecs
+import scala.reflect.internal.pickling.ByteCodecs
 
 object ScalaSigParser {
 
@@ -272,7 +272,7 @@ object ScalaSigEntryParsers extends RulesWithState with MemoisableRules {
   ) as "type"
 
   lazy val literal = oneOf(
-    24 -^ (),
+    (24).-^(()),
     25 -~ longValue ^^ (_ != 0L),
     26 -~ longValue ^^ (_.toByte),
     27 -~ longValue ^^ (_.toShort),
