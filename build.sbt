@@ -22,10 +22,6 @@ scalaVersion := "2.10.1"
 
 crossScalaVersions ++= Seq(
   "2.10.0"
-  // "2.9.3-RC1",
-  // "2.9.2",
-  // "2.9.1", "2.9.1-1",
-  // "2.9.0", "2.9.0-1"
 )
 
 // These options will be used for *all* versions.
@@ -63,12 +59,15 @@ javacOptions ++= Seq("-Xlint:unchecked", "-Xlint:deprecation")
 libraryDependencies ++= Seq(
   "org.codehaus.jackson" % "jackson-core-asl" % "1.9.12",
   "org.codehaus.jackson" % "jackson-mapper-asl" % "1.9.12"
-  // "com.codahale" %% "simplespec" % "0.6.0" % "test"
 )
 
 libraryDependencies <+= scalaVersion {
   "org.scala-lang" % "scala-reflect" % _
 }
+
+resolvers ++= Seq(
+  "Local Maven" at Path.userHome.asFile.toURI.toURL + ".m2/repository"
+)
 
 
 /* testing */
