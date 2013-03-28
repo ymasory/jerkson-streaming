@@ -4,6 +4,7 @@
 Scala versions as high as 2.9.1 and does not support streaming iteration.
 
 ## Differences from upstream Jerkson ##
+
 - Streaming iteration is supported.
 - sbt instead of Maven.
 - Tests have been deleted, since sbt cannot run
@@ -11,6 +12,7 @@ Scala versions as high as 2.9.1 and does not support streaming iteration.
 - Minor tweaks to get compilation in 2.10.
 
 ## Install ##
+
 - This version of Jerkson is hosted on
 [Maven Central](http://central.maven.org/maven2/com/cloudphysics/).
 - From sbt:
@@ -26,6 +28,19 @@ Scala versions as high as 2.9.1 and does not support streaming iteration.
   </dependency>
   ```
 
+## Build ##
+
+- Just compile:
+  ```sh
+  $ cd jerkson
+  $ ./sbt compile
+  ```
+- Publish:
+  ```sh
+  $ ./sbt publish
+  ```
+
 ## Contact ##
+
 Repo maintained by [Yuvi Masory](http://yuvimasory.com).  
 [ymasory@gmail.com](ymasory@gmail.com)
