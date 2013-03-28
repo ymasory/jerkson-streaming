@@ -16,10 +16,12 @@ Scala versions as high as 2.9.1 and does not support streaming iteration.
 - This version of Jerkson is hosted on
 [Maven Central](http://central.maven.org/maven2/com/cloudphysics/).
 - From sbt:
+
   ```scala
-  libraryDependencies += "com.cloudphysics" %% "jerkson" % "0.5.1"
+  libraryDependencies += "com.cloudphysics" % "jerkson_2.10" % "0.5.1"
   ```
 - From Maven:
+
   ```xml
   <dependency>
     <groupId>com.cloudphysics</groupId>
